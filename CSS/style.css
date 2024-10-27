@@ -1,0 +1,104 @@
+
+/* Font change */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Optional: Additional responsive styling for mobile view */
+@media (max-width: 900px) {
+    .navbar-brand {
+        font-size: 1.5rem; /* Increase font size on smaller screens if needed */
+        width: 75%; /* Increase the width of the navbar brand */
+        text-align: center; /* Center the text */
+    }
+}
+
+/* Styling nav items */
+.navbar-nav .nav-item {
+    margin-right: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #343a40;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect with underline animation */
+.navbar-nav .nav-link:hover::after, .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    left: 0;
+    bottom: -4px;
+    animation: underline 0.4s ease forwards;
+}
+
+/* Animation for underline */
+@keyframes underline {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: 700;
+}
+
+
+/* Offcanvas styling */
+
+.offcanvas-body .nav-item {
+    margin-bottom: 1rem;
+}
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+}
+
+/* Custom card visuals*/
+.custom-card {
+    background-color: #F3F3E0 !important; /* Light background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 20px; /* Margin to separate from other content */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card-footer a:hover i:hover {
+    transform: scale(1.2); /* Lifts the card */
+    color:#007bff;
+}
+
+.about-content {
+    padding: 10px; /* Inner padding */
+    margin: 10px; /* Margin to separate from other content */
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
