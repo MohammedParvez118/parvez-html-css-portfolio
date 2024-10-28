@@ -18,6 +18,7 @@ body {
 /* Styling nav items */
 .navbar-nav .nav-item {
     margin-right: 1.5rem;
+    font-size: larger;
 }
 
 .navbar-nav .nav-link {
