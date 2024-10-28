@@ -18,7 +18,6 @@ body {
 /* Styling nav items */
 .navbar-nav .nav-item {
     margin-right: 1.5rem;
-    font-size: larger;
 }
 
 .navbar-nav .nav-link {
@@ -57,13 +56,27 @@ body {
 /* Offcanvas styling */
 
 .offcanvas-body .nav-item {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
+
+.offcanvas-body .nav-item .nav-link {
+    font-size: 2.5rem; /* Slightly reduce font size to prevent wrapping */
+    text-align: center;
+    width: 100%; /* Full width for better alignment */
+    padding: 10px 0; /* Consistent padding */
+    color: #343a40; /* Ensure color matches the original styling */
+}
+
 .offcanvas-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100%;
+}
+
+.offcanvas-body .navbar-nav {
+    width: 80%; /* Restricting nav width to 80% for better appearance */
 }
 
 .navbar-toggler {
