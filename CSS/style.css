@@ -249,7 +249,7 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .timeline::before {
         left: 20px;
     }
@@ -274,6 +274,58 @@ body {
     .timeline-title{
         text-align: left;
     }
+}
+
+.skill-card {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    perspective: 1000px;
+    margin: 15px 0; /* Spacing between cards */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    background-color: #ffffff; /* Front card color */
+}
+
+.card-back {
+    background-color: #007bff; /* Back card color */
+    color: white; /* Back text color */
+    transform: rotateY(180deg); /* Initially flip back */
+}
+
+.skill-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.skill-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Optional: Style for lists */
+.card-back ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.card-back ul li {
+    margin: 5px 0; /* Spacing between items */
 }
 
 
