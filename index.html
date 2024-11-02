@@ -25,7 +25,7 @@
     <section id="Menu"  >
         <!-- Navbar for larger screens -->
         <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1ab2f8;"> 
-            <div class="container-fluid mt-3 mb-3">
+            <div class="container-fluid mt-2 mb-2">
                 <div class="navbar-brand" style="margin-left: 15px;">
                     <span class="d-none d-lg-inline"> <div class="box-marker"> </div> <span style="font-weight: bold;">Parvez</span> | SOFTWARE QUALITY ENGINEER</span>
                         <div class="d-lg-none text-center">
@@ -40,12 +40,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
-                    <ul class="navbar-nav" id="navbarNav">
+                <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end ">
+                    <ul class="navbar-nav " id="navbarNav">
                         <li class="nav-item"><a class="nav-link" href="#about">ABOUT ME</a></li>
                         <li class="nav-item"><a class="nav-link" href="#resume">RESUME</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                        <li class="nav-item"><a class="nav-link disabled" href="#contact">CONTACT ME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT ME</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,12 +56,12 @@
             <div class="offcanvas-header mt-1">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body mt-4">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item"><a class="nav-link" href="#about" >ABOUT ME</a></li>
                     <li class="nav-item"><a class="nav-link" href="#resume" >RESUME</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#projects" >PROJECTS</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#contact" >CONTACT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" >PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" >CONTACT ME</a></li>
                 </ul>
             </div>
         </div>
@@ -224,10 +224,11 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
 
             <!--Skills section-->
-            <section id="skills" class="container my-5">
+            <div id="skills" class="container my-5">
                 <div class = "timeline-title" style="font-weight: bold;">Skills</div>
                 <div class="row">
                     <div class="col-md-3">
@@ -289,14 +290,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
-                
             </div>
         </div>
     </section>
 
+
+    <!--Projects section-->
     <section id="projects" class="container py-5" style="padding-top: 60px; background-color: #f8f9fa;">
-        <h2 class="text-center mb-5">My Projects</h2>
+        <h2 class="display-3 fs-1 fw-bold text-center mb-5" >PROJECTS</h2>
         <h3 class="mb-3">Professional Projects</h3>
         <div class="row g-4">
             <!-- Project Card -->
@@ -305,16 +306,15 @@
                     <div class="row g-0">
                         <!-- Image Column -->
                         <div class="col-md-4">
-                            <img src="./Images/Project Images/Infosys_BT.png" class="img-fluid rounded-start project-img" alt="Project Image">
+                            <img src="./Images/Project Images/Infosys_BT.png" class="img-thumbnail img-fluid rounded-start" alt="Project Image" style=" border-radius: 10px 0 0 10px; ">
                         </div>
                         
-                        <!-- Content Column -->
                         <div class="col-md-8">
                             <div class="card-body d-flex flex-column">
                                 <!-- Project Content -->
                                 <div class="project-info">
-                                    <h3 class="card-title">Telecom Web Application Testing</h3>
-                                    <p class="card-text brief-desc mb-2">
+                                    <h3 class="card-title" style="margin-top: 0px;">Telecom Web Application Testing</h3>
+                                    <p class="card-text brief-desc mb-1">
                                         As a QA Automation Engineer, I played a pivotal role in ensuring the reliability and 
                                         functionality of over 30 integrated components within the system. My responsibilities 
                                         included automating end-to-end test cases, validating API responses, and enhancing test coverage 
@@ -337,7 +337,7 @@
                                 
                                 <!-- View More Button Row -->
                                 <div class="mt-auto">
-                                    <button class="btn btn-outline-info view-more-btn mt-3" type="button">
+                                    <button class="btn btn-outline-info view-more-btn" type="button">
                                         View More
                                     </button>
                                 </div>
@@ -354,7 +354,7 @@
             <!-- Project Card 1 -->
             <div class="col flex-column" >
                 <div class="card shadow-sm" >
-                    <img src="./Images/Project Images/HTML_Project.png" class="project-img" alt="Project Image">
+                    <img src="./Images/Project Images/HTML_Project.png" class="img-thumbnail project-img" alt="Project Image">
                     <div class="card-body text-center">
                         <div class="project-info mb-3">
                             <p class="card-title ">Online Resume</p>
@@ -362,7 +362,7 @@
                                 HTML
                             </button>
                         </div>
-                        <div class="card-footer bg-body-tertiary d-flex justify-content-center" style="width: 100%;">
+                        <div class="card-footer bg-body-tertiary d-flex justify-content-center" style="width: 100%; background-color: white">
                             <a href="https://mohammedparvez118.github.io/html-resume/" target="_blank" class="mx-2 text-decoration-none text-dark">
                                 <i class="fab fa-solid fa-link fa-lg"></i>
                             </a>
@@ -376,7 +376,7 @@
             <!-- Project Card 2 -->
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="./Images/Project Images/Web_Design_Agency.png" class="project-img" alt="Project Image">
+                    <img src="./Images/Project Images/Web_Design_Agency.png" class="img-thumbnail project-img" alt="Project Image">
                     <div class="card-body text-center">
                         <div class="project-info mb-3">
                             <p class="card-title ">Simple website with CSS</p>
@@ -390,7 +390,7 @@
                                 Responsive
                             </button>
                         </div>
-                        <div class="card-footer bg-body-tertiary d-flex justify-content-center" style="width: 100%;">
+                        <div class="card-footer bg-body-tertiary d-flex justify-content-center" style="width: 100%; background-color: white;">
                             <a href="https://mohammedparvez118.github.io/Web_Design_Agency/" target="_blank" class="mx-2 text-decoration-none text-dark">
                                 <i class="fab fa-solid fa-link fa-lg"></i>
                             </a>
@@ -405,7 +405,7 @@
              <!-- Project Card 3 -->
              <div class="col">
                 <div class="card shadow-sm">
-                    <img src="./Images/Project Images/TinDog.png" class="project-img" alt="Project Image">
+                    <img src="./Images/Project Images/TinDog.png" class="img-thumbnail project-img" alt="Project Image">
                     <div class="card-body text-center">
                         <div class="project-info mb-3">
                             <p class="card-title ">A Startup website built with Bootstrap</p>
@@ -422,11 +422,11 @@
                                 Responsive
                             </button>
                         </div>
-                        <div class="card-footer bg-body-tertiary d-flex justify-content-center" style="width: 100%;">
-                            <a href="https://github.com/MohammedParvez118/tin-dog" target="_blank" class="mx-2 text-decoration-none text-dark">
+                        <div class="card-footer bg-body-tertiary d-flex justify-content-center" style="width: 100%; background-color: white;">
+                            <a href="https://mohammedparvez118.github.io/tin-dog/" target="_blank" class="mx-2 text-decoration-none text-dark">
                                 <i class="fab fa-solid fa-link fa-lg"></i>
                             </a>
-                            <a href="https://mohammedparvez118.github.io/tin-dog/" target="_blank" class="mx-2 text-decoration-none text-dark">
+                            <a href="https://github.com/MohammedParvez118/tin-dog" target="_blank" class="mx-2 text-decoration-none text-dark">
                                 <i class="fab fa-github fa-lg"></i>
                             </a>
                         </div>
@@ -436,10 +436,47 @@
         </div>
     </section>
     
+    <!-- Contact Me Section -->
+    <section id="contact" style="padding: 50px 0; text-align: center; background: linear-gradient(to bottom, #f8f9fa, #c3cfe2);">
+        <h2 style="font-size: 2.5em; color: #333;">Let’s Connect</h2>
+        <p style="font-size: 1.2em; color: #666; margin-bottom: 30px;">
+            I’m always open to new opportunities and conversations! Reach out via my contact info below.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <!-- Mobile Number Card -->
+            <a href="tel:+918179815534" class="contact-card">
+                <i class="fas fa-phone-alt" style="font-size: 1.5em; color: #007bff;"></i>
+                <p style="margin: 10px 0; font-size: 1.2em; color: #333;">+91 8179815534</p>
+            </a>
+            <!-- Email Card -->
+            <a href="mailto:parvez.noor.md@gmail.com" class="contact-card">
+                <i class="fas fa-envelope" style="font-size: 1.5em; color: #007bff;"></i>
+                <p style="margin: 10px 0; font-size: 1.2em; color: #333;">parvez.noor.md@gmail.com</p>
+            </a>
+            <!--LinkedIn Card-->
+            <a href="https://www.linkedin.com/in/chittiveli-noor-mohammed-parvez-2128ba1ab/" target="_blank" class="contact-card">
+                <i class="fab fa-linkedin" style="font-size: 1.5em; color: #0077b5;"></i>
+                <p style="margin: 10px 0; font-size: 1.2em; color: #333;">Mohammed Parvez</p>
+            </a>
+        </div>
+    </section>
 
-    <section id="contact" style="padding-top: 60px; background-color: #e9ecef;">Contact Me Section</section>
+    <!--Footer-->
+    <section id="footer" style="padding-top: 60px; background-color: #c3cfe2;">
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+              <div class=" d-flex align-items-center">
+                <a href="#about" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <img class="bi" src="./Images/Favicon/favicon-32x32.png" width="20" height="20"></img>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 By Mohammed Parvez</span>
+              </div>
+            </footer>
+          </div>
+    </section>
 
 
+<!-- Som basic Internal JavaScript -->
     <script>
         // Function to observe timeline items on scroll
         const observer = new IntersectionObserver((entries) => {
@@ -449,12 +486,10 @@
                 }
             });
         }, { threshold: 0.5 });
-    
+        
         // Apply observer to each timeline item
         document.querySelectorAll('.timeline-item').forEach(item => observer.observe(item));
-    </script>
     
-    <script>
         // Script to highlight active link based on current section
         document.addEventListener("DOMContentLoaded", () => {
             const sections = document.querySelectorAll("section");
@@ -483,34 +518,32 @@
             // Listen to scroll events
             window.addEventListener("scroll", activateLink);
         });
-
-
         document.querySelectorAll('.offcanvas .nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        const offcanvasElement = document.getElementById('sidebar');
-        const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
-        offcanvasInstance.hide(); // Hide offcanvas
-    });
-});
-
-    document.querySelectorAll('.view-more-btn').forEach(button => {
-        button.addEventListener('click', function () {
-            const extendedInfo = this.closest('.card-body').querySelector('.extended-info');
-            const isExpanded = extendedInfo.style.maxHeight && extendedInfo.style.maxHeight !== '0px';
-            
-            if (!isExpanded) {
-                // Expand the content
-                extendedInfo.style.maxHeight = '200px'; // Set this to a value that fits your content
-                this.textContent = 'View Less'; // Change button text
-            } else {
-                // Collapse the content
-                extendedInfo.style.maxHeight = '0'; // Collapse the content
-                this.textContent = 'View More'; // Change button text back
-            }
+            link.addEventListener('click', () => {
+                const offcanvasElement = document.getElementById('sidebar');
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                offcanvasInstance.hide(); // Hide offcanvas
+            });
         });
-    });
-
-
+        
+        // Apply View More functionality for project cards
+        document.querySelectorAll('.view-more-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const extendedInfo = this.closest('.card-body').querySelector('.extended-info');
+                const isExpanded = extendedInfo.style.maxHeight && extendedInfo.style.maxHeight !== '0px';
+                
+                if (!isExpanded) {
+                    // Expand the content
+                    extendedInfo.style.maxHeight = '300px'; // Set this to a value that fits your content
+                    this.textContent = 'View Less'; // Change button text
+                } else {
+                    // Collapse the content
+                    extendedInfo.style.maxHeight = '0'; // Collapse the content
+                    this.textContent = 'View More'; // Change button text back
+                }
+            });
+        });
     </script>
+
 </body>
 </html>

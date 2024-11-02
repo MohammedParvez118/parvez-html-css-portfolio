@@ -4,8 +4,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 /* Optional: Additional responsive styling for mobile view */
 @media (max-width: 900px) {
     .navbar-brand {
@@ -56,14 +54,14 @@ body {
 /* Offcanvas styling */
 
 .offcanvas-body .nav-item {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .offcanvas-body .nav-item .nav-link {
-    font-size: 2rem; /* Slightly reduce font size to prevent wrapping */
-    text-align: center;
+    font-size: 1.5rem; /* Slightly reduce font size to prevent wrapping */
+    text-align: top;
     width: 100%; /* Full width for better alignment */
-    padding: 10px 0; /* Consistent padding */
+    padding: 5px 0; /* Consistent padding */
     color: #343a40; /* Ensure color matches the original styling */
 }
 
@@ -71,7 +69,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
@@ -351,4 +348,21 @@ body {
     transition: max-height 0.5s ease; /* Smooth transition for height */
 }
 
+
+/* Contact Me Section */
+
+.contact-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  .contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 
