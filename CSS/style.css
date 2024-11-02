@@ -52,7 +52,6 @@ body {
 
 
 /* Offcanvas styling */
-
 .offcanvas-body .nav-item {
     margin-bottom: 2rem;
 }
@@ -165,7 +164,7 @@ body {
 /* Timeline header */
 .timeline-title {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     font-weight: bold;
     color: #007bff;
     margin: 20px;
