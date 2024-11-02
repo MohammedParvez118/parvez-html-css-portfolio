@@ -329,4 +329,26 @@ body {
 }
 
 
+/*Project Section */
+.project-card {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-img {
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.view-more-btn {
+    transition: background-color 0.3s;
+}
+
+/* Hidden content styling */
+.extended-info {
+    max-height: 0; /* Initially hide the extended info */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease; /* Smooth transition for height */
+}
+
 
