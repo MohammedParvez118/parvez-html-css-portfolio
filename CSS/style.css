@@ -347,7 +347,14 @@ body {
     transition: max-height 0.5s ease; /* Smooth transition for height */
 }
 
-
+.project-type-heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
  /* Contact card styling with transparency */
  .contact-card {
     background: rgba(255, 255, 255, 0); /* Transparent white background */
